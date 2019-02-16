@@ -11,14 +11,16 @@ namespace MyAPI.Models
     [Table("dangky")]
     public class DangKy : EntityBase
     {
+        public DangKy() { }
+
         [Key]
         public int stt { get; set; }
         public string malophoc { get; set; }
         public string ngaydangky { get; set; }
-        public double muchocphi { get; set; }
-        public int miengiam { get; set; }
-        public double duatruoc { get; set; }
-        public double conlai { get; set; }
+        public double? muchocphi { get; set; }
+        public int? miengiam { get; set; }
+        public double? duatruoc { get; set; }
+        public double? conlai { get; set; }
         public string ghichu { get; set; }
         public string msphieuthu { get; set; }
         public int vang_tuan1 { get; set; }

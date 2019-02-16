@@ -7,15 +7,16 @@ using System.Web;
 
 namespace MyAPI.Service
 {
-    public class DangKyService
+    public class LopHocService
     {
-        DangKyRepository _repository;
-        public DangKyService()
+        LopHocRepository _repository;
+
+        public LopHocService()
         {
-            _repository = new DangKyRepository();
+            _repository = new LopHocRepository();
         }
 
-        public IEnumerable<DangKy> GetAll()
+        public IEnumerable<LopHoc> GetAll()
         {
             return _repository.List().ToList();
         }

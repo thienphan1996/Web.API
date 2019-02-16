@@ -1,6 +1,4 @@
-﻿using MyAPI.Data;
-using MyAPI.Models;
-using MyAPI.Repositories;
+﻿using MyAPI.Models;
 using MyAPI.Service;
 using System;
 using System.Collections.Generic;
@@ -11,19 +9,18 @@ using System.Web.Http;
 
 namespace MyAPI.Controllers
 {
-    public class DangKyController : ApiController
+    public class AccountController : ApiController
     {
-        DangKyService _service;
-        public DangKyController()
+        AccountService _service;
+        public AccountController()
         {
-            _service = new DangKyService();
+            _service = new AccountService();
         }
 
         // GET api/values
-        public IEnumerable<DangKy> Get()
+        public IEnumerable<Account> Get()
         {
             return _service.GetAll();
         }
-
     }
 }

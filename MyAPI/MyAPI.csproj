@@ -215,20 +215,42 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\DangKyController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\KhachHangController.cs" />
+    <Compile Include="Controllers\KhoaHocController.cs" />
+    <Compile Include="Controllers\LopHocController.cs" />
+    <Compile Include="Controllers\NhanVienController.cs" />
+    <Compile Include="Controllers\SoLienLacController.cs" />
     <Compile Include="Data\EntityBase.cs" />
     <Compile Include="Data\GvDbContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Interface\IRepository.cs" />
+    <Compile Include="Models\Account.cs" />
     <Compile Include="Models\DangKy.cs" />
+    <Compile Include="Models\KhachHang.cs" />
+    <Compile Include="Models\KhoaHoc.cs" />
+    <Compile Include="Models\LopHoc.cs" />
+    <Compile Include="Models\NhanVien.cs" />
+    <Compile Include="Models\SoLienLac.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AccountRepository.cs" />
     <Compile Include="Repositories\DangKyRepository.cs" />
+    <Compile Include="Repositories\KhachHangRepository.cs" />
+    <Compile Include="Repositories\KhoaHocRepository.cs" />
+    <Compile Include="Repositories\LopHocRepository.cs" />
+    <Compile Include="Repositories\NhanVienRepository.cs" />
     <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Repositories\SoLienLacRepository.cs" />
+    <Compile Include="Service\AccountService.cs" />
     <Compile Include="Service\DangKyService.cs" />
+    <Compile Include="Service\KhachHangService.cs" />
+    <Compile Include="Service\KhoaHocService.cs" />
+    <Compile Include="Service\LopHocService.cs" />
+    <Compile Include="Service\NhanVienService.cs" />
+    <Compile Include="Service\SoLienLacService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
