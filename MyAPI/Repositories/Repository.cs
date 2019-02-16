@@ -12,9 +12,9 @@ namespace MyAPI.Repositories
     {
         private readonly GvDbContext _dbContext;
 
-        public Repository(GvDbContext dbContext)
+        public Repository()
         {
-            _dbContext = dbContext;
+            _dbContext = new GvDbContext();
         }
 
         public void Create(T entity)
@@ -32,6 +32,11 @@ namespace MyAPI.Repositories
         public T GetById(int id)
         {
             return _dbContext.Set<T>().Find(id);
+        }
+
+        public IEnumerable<T> List()
+        {
+            return _dbContext.Set<T>().AsEnumerable();
         }
 
         public void Update(T entity)

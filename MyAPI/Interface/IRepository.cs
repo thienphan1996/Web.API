@@ -11,6 +11,8 @@ namespace MyAPI.Interface
     {
         T GetById(int id);
 
+        IEnumerable<T> List();
+
         void Create(T entity);
 
         void Delete(T entity);

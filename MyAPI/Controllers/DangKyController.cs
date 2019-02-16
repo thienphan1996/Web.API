@@ -1,5 +1,7 @@
 ﻿using MyAPI.Data;
 using MyAPI.Models;
+using MyAPI.Repositories;
+using MyAPI.Service;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,17 +13,16 @@ namespace MyAPI.Controllers
 {
     public class DangKyController : ApiController
     {
-        GvDbContext _context;
-
+        DangKyService _dangKyService;
         public DangKyController()
         {
-            _context = new GvDbContext();
+            _dangKyService = new DangKyService();
         }
 
         // GET api/values
-        public List<DangKy> Get()
+        public IEnumerable<DangKy> Get()
         {
-            return _context.DangKy.ToList();
+            return _dangKyService.GetAll();
         }
 
     }

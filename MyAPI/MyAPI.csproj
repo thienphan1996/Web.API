@@ -218,12 +218,17 @@
     <Compile Include="Controllers\DangKyController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Data\EntityBase.cs" />
     <Compile Include="Data\GvDbContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Interface\IRepository.cs" />
     <Compile Include="Models\DangKy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\DangKyRepository.cs" />
+    <Compile Include="Repositories\Repository.cs" />
+    <Compile Include="Service\DangKyService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />

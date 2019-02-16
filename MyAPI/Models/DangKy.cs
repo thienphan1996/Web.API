@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyAPI.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -8,7 +9,7 @@ using System.Web;
 namespace MyAPI.Models
 {
     [Table("dangky")]
-    public class DangKy
+    public class DangKy : EntityBase
     {
         [Key]
         public int stt { get; set; }
