@@ -10,7 +10,7 @@ namespace MyAPI.Repositories
 {
     public class Repository<T> : IRepository<T> where T : EntityBase
     {
-        private readonly GvDbContext _dbContext;
+        protected readonly GvDbContext _dbContext;
 
         public Repository()
         {

@@ -222,6 +222,7 @@
     <Compile Include="Controllers\LopHocController.cs" />
     <Compile Include="Controllers\NhanVienController.cs" />
     <Compile Include="Controllers\SoLienLacController.cs" />
+    <Compile Include="Core\ApiException.cs" />
     <Compile Include="Data\EntityBase.cs" />
     <Compile Include="Data\GvDbContext.cs" />
     <Compile Include="Global.asax.cs">
@@ -251,6 +252,7 @@
     <Compile Include="Service\LopHocService.cs" />
     <Compile Include="Service\NhanVienService.cs" />
     <Compile Include="Service\SoLienLacService.cs" />
+    <Compile Include="ViewModels\SoLienLacViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />

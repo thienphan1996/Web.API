@@ -15,6 +15,7 @@ namespace MyAPI.Models
 
         [Key]
         public int stt { get; set; }
+        public string mskh { get; set; }
         public string malophoc { get; set; }
         public string ngaydangky { get; set; }
         public double? muchocphi { get; set; }

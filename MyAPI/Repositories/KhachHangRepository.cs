@@ -12,5 +12,12 @@ namespace MyAPI.Repositories
         {
 
         }
+
+        public KhachHang GetByUser(string user)
+        {
+            var khachhang = _dbContext.KhachHang.FirstOrDefault(k => (k.mskh + string.Empty) == user);
+
+            return khachhang;
+        }
     }
 }
